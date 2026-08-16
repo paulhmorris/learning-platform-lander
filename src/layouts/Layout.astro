@@ -4,6 +4,7 @@ import Navbar from "@components/navbar.astro";
 import "@fontsource-variable/inter/index.css";
 import { SEO } from "astro-seo";
 import "../tailwind.css";
+import Analytics from "./analytics.astro";
 
 export interface Props {
   title: string;
@@ -32,6 +33,8 @@ const defaultDescription = "Hip Hop Defensive Driving is the #1 Music Themed Tex
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="generator" content={Astro.generator} />
+
+    <Analytics />
 
     <link rel="preload" as="image" href={"/faq-open.svg"} />
     <SEO
